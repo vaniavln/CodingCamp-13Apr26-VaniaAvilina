@@ -204,3 +204,153 @@ h2 {
   max-width: 100%;
   height: auto;
 }
+
+/* ===== Categories Section ===== */
+.categories-section {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.category-input-row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+
+#new-category-input {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+#new-category-input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+#add-category-btn {
+  padding: 0.5rem 1rem;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+#add-category-btn:hover {
+  background: #1d4ed8;
+}
+
+#category-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+}
+
+#category-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background: #fafafa;
+  font-size: 0.95rem;
+}
+
+#category-list .category-delete-btn {
+  background: none;
+  border: 1px solid #dc2626;
+  color: #dc2626;
+  border-radius: 4px;
+  padding: 0.2rem 0.45rem;
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+#category-list .category-delete-btn:hover {
+  background: #dc2626;
+  color: #fff;
+}
+
+/* ===== List Section Header Controls ===== */
+.list-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.list-section-header h2 {
+  margin-bottom: 0;
+}
+
+#toggle-view-btn {
+  padding: 0.35rem 0.75rem;
+  background: #fff;
+  color: #2563eb;
+  border: 1px solid #2563eb;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+#toggle-view-btn:hover {
+  background: #2563eb;
+  color: #fff;
+}
+
+/* ===== Sort Control ===== */
+#sort-control {
+  display: block;
+  width: 100%;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  background: #fff;
+  color: #333;
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+#sort-control:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* ===== Monthly Summary ===== */
+.month-group-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.4rem 0.6rem;
+  margin-top: 0.5rem;
+  background: #f0f4ff;
+  border-radius: 6px;
+  border-bottom: 2px solid #c7d7f9;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #1e3a8a;
+}
+
+.month-group-header .month-total {
+  font-size: 0.95rem;
+  color: #2563eb;
+}
